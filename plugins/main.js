@@ -65,7 +65,7 @@ try{
 if(os.hostname().length == 12 ) hostname = 'replit'
 else if(os.hostname().length == 36) hostname = 'heroku'
 else if(os.hostname().length == 8) hostname = 'koyeb'
-else hostname = os.hostname()`m`
+else hostname = os.hostname()
 let monspace ='```'
 const buttons = [
 {buttonId: prefix + 'downmenu' , buttonText: {displayText:  '*DOWNLOAD*'}, type:1},
