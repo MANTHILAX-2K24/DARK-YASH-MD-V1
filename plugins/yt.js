@@ -86,7 +86,6 @@ cmd({
     pattern: "yt",
     alias: ["play"],
     use: '.yt lelena',
-    react: "📽️",
     desc: descyt,
     category: "download",
     filename: __filename
