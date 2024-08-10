@@ -127,20 +127,22 @@ return await conn.buttonMessage(from, buttonMessage, mek)}
 let yts = require("yt-search")
 let search = await yts(q)
 let anu = search.videos[0]
-const cap = `*╭───[🍭DARK-YASH-MD🍭]───╮*
+const cap = `╭┈┈┈[🧛‍♂️DARK-YASH-MD🧛‍♂️]┈┈┈╮
 
-         *🎥 YT DOWNLOADER 🎥*
-     
-┌────────────────────
-┝ *ℹ \`Title :\`* ${anu.title}
-┝ *👤 \`Author :\`* ${anu.author.name}
-┝ *📺 \`Views :\`* ${anu.views}
-┝ *📌 \`Ago :\`* ${anu.ago}
-┝ *🕘 \`Duration :\`* ${anu.timestamp}
+          🎥 YT DOWNLOADER🎥
+
+┌────────────────────┐
+┝ *ℹ \`Title : \`* ${anu.title}
+┝ *👤 \`Author : \`* ${anu.author.name}
+┝ *👁️‍🗨️ \`Views : \`* ${anu.viwes}
+┝ *📌 \`Ago : \`* ${anu.ago}
+┝ *🕘 \`Duration : \`* ${anu.timestamp}
 ┝ *🔗 \`Url :\`* ${anu.url}
-└────────────────────
+└────────────────────┘
 
-🔢 select the audio or video type bellow.`
+🔢 select the audio or video type bellow...
+
+╭───────────⦁⦁➤`
 const buttons = [
   {buttonId: prefix + 'selectaud ' + anu.url, buttonText: {displayText: '*Song FILE 🎶*'}, type: 1},
   {buttonId: prefix + 'selectvid ' + anu.url, buttonText: {displayText: '*Video File 🎥*'}, type: 1}
