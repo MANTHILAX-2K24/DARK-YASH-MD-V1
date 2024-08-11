@@ -134,17 +134,17 @@ const cap = `*╭┈┈┈[🧛‍♂️DARK-YASH-MD🧛‍♂️]┈┈┈╮*
 *┌────────────────────┐*
 ┝ *ℹ \`Title :\`* ${anu.title}
 ┝ *👤 \`Author :\`* ${anu.author.name}
-┝ *👁️‍🗨️ \`Views :\`* ${anu.viwes}
+┝ *👁️‍🗨️ \`Views :\`* ${anu.views}
 ┝ *📌 \`Ago :\`* ${anu.ago}
 ┝ *🕘 \`Duration :\`* ${anu.timestamp}
 ┝ *🔗 \`Url :\`* ${anu.url}
 *└────────────────────┘*
 
-*\`🔢 select the audio or video type bellow...\`*
+*🔢 \`select the audio or video type bellow...\`*
 
 ╭───────────⦁⦁➤`
 const buttons = [
-  {buttonId: prefix + 'selectaud ' + anu.url, buttonText: {displayText: '*Song FILE 🎶*'}, type: 1},
+  {buttonId: prefix + 'selectaud ' + anu.url, buttonText: {displayText: '*Song File 🎶*'}, type: 1},
   {buttonId: prefix + 'selectvid ' + anu.url, buttonText: {displayText: '*Video File 🎥*'}, type: 1}
 ]
 const buttonMessage = {
@@ -215,20 +215,22 @@ return await conn.buttonMessage(from, buttonMessage, mek)}
 let yts = require("yt-search")
 let search = await yts(q)
 let anu = search.videos[0]
-const cap = `*╭──[🍭DARK-YASH-MD🍭]──╮*
+const cap = `*╭┈┈┈[🧛‍♂️DARK-YASH-MD🧛‍♂️]┈┈┈╮*
 
-      *🎥 VIDEO DOWNLOADER 🎥*
-   
-┌────────────────────
+          *🎥 VIDEO DOWNLOADER🎥*
+
+*┌────────────────────┐*
 ┝ *ℹ \`Title :\`* ${anu.title}
 ┝ *👤 \`Author :\`* ${anu.author.name}
-┝ *📺 \`Views :\`* ${anu.views}
+┝ *👁️‍🗨️ \`Views :\`* ${anu.views}
 ┝ *📌 \`Ago :\`* ${anu.ago}
 ┝ *🕘 \`Duration :\`* ${anu.timestamp}
 ┝ *🔗 \`Url :\`* ${anu.url}
-└─────────────────────
+*└────────────────────┘*
 
-🔢 Select the Video quality from below\n`
+*🔢 \`select the video type from bellow...\`*
+
+╭───────────⦁⦁➤`
 const buttons = [
   {buttonId: prefix + '240p ' + anu.url, buttonText: {displayText: '*240p VIDEO*'}, type: 1},
   {buttonId: prefix + '360p ' + anu.url, buttonText: {displayText: '*360p VIDEO*'}, type: 1},
@@ -295,20 +297,22 @@ return await conn.buttonMessage(from, buttonMessage, mek)}
 let yts = require("yt-search")
 let search = await yts(q)
 let anu = search.videos[0]
-const cap = `*╭───[🍭DARK-YASH-MD🍭]───╮*
+const cap = `*╭┈┈┈[🧛‍♂️DARK-YASH-MD🧛‍♂️]┈┈┈╮*
 
-       *🎶 SONG DOWNLOADER 🎶*
-   
-┌───────────────────
-┝ *ℹ️ \`Title :\`* ${anu.title}
+          *🎶 SONG DOWNLOADER 🎶*
+
+*┌────────────────────┐*
+┝ *ℹ \`Title :\`* ${anu.title}
 ┝ *👤 \`Author :\`* ${anu.author.name}
-┝ *📺 \`Views :\`* ${anu.views}
+┝ *👁️‍🗨️ \`Views :\`* ${anu.views}
 ┝ *📌 \`Ago :\`* ${anu.ago}
 ┝ *🕘 \`Duration :\`* ${anu.timestamp}
 ┝ *🔗 \`Url :\`* ${anu.url}
-└────────────────────
+*└────────────────────┘*
 
-🔢 Select the audio type from below.\n`
+*🔢 \`select the audio type from bellow...\`*
+
+╭───────────⦁⦁➤`
 const buttons = [
   {buttonId: prefix + 'ytdoc ' + anu.url, buttonText: {displayText: '*Audio File 🎶*'}, type: 1},
   {buttonId: prefix + 'ytmp3 ' + anu.url, buttonText: {displayText: '*Document File 📁*'}, type: 1}
