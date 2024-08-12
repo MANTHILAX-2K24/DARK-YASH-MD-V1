@@ -120,7 +120,7 @@ const maru =`┌─────────────────────�
 ├ 📟 *\`Ram usage :-\`* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ├ ⚙️ *\`Platform :-\`*  Heroku
 ├ 👨‍💻 *\`Owners :-\`* M.G.Manthila
-├ 🧬 *\`Version :-\`* 1.0.1
+├ 🧬 *\`Version :-\`* 1.0.2
 └───────────────────────`
  let system = await conn.sendMessage(from , { text: maru }, { quoted: mek } )
  return await conn.sendMessage(from, { react: { text: "📟", key: system.key } });
