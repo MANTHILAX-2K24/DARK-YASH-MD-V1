@@ -5,5 +5,5 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-SESSION_ID: process.env.SESSION_ID === undefined ? ' ' : process.env.SESSION_ID,
+SESSION_ID: process.env.SESSION_ID === undefined ? 'QvE02RCZ#QAU0WhUpFNXPCXail3hvuKORP4VbcpIUOoUJl_9_d48' : process.env.SESSION_ID,
 };    
